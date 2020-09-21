@@ -29,6 +29,5 @@ void APawnBase::Tick(float DeltaTime)
 void APawnBase::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
 }
 
