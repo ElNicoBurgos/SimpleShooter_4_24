@@ -6,10 +6,18 @@
 #include "GameFramework/Character.h"
 #include "CharacterBase.generated.h"
 
+class USpringArmComponent;
+class UCameraComponent;
 UCLASS()
 class SIMPLESHOOTER_API ACharacterBase : public ACharacter
 {
 	GENERATED_BODY()
+
+private:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	USpringArmComponent* SpringArmComp;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	UCameraComponent* CameraComp;
 
 public:
 	// Sets default values for this character's properties
